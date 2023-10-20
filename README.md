@@ -17,15 +17,17 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
  6. O sistema deverá fazer o seguimento das pessoas na sala e manter a identificação em cima das pessoas que reconheceu anteriormente, ainda que atualmente não seja possível reconhecê-las.
 
  # Tópicos e percentages-para avaliação
- 
-  15% Deteção
-  15% Seguimento
-  10% Reconhecimento
-  5% Base de dados Caras
-  5% Deteção de desconhecidos
-  5% Aprendizagem de novas caras
-  10% Comprimentar pessoas
-  5% Interface
-  10% Vizualização da informação
-  10% Extras
-  10% Código e Github
+
+  | Percentagem  | Tarefa |
+| ------------- | ------------- |
+  |15%| Deteção|
+  |15%| Seguimento|
+  |10%| Reconhecimento|
+  |5%| Base de dados Caras|
+  |5%| Deteção de desconhecidos|
+  |5%| Aprendizagem de novas caras|
+  |10%| Comprimentar pessoas|
+  |5%| Interface|
+  |10%| Vizualização da informação|
+  |10%| Extras|
+  |10%| Código e Github|
