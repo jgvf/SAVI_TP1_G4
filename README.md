@@ -33,6 +33,6 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
   |10%| Código e Github|
 
 # Deteção
-  A deteção é baseada no site : https://www.datacamp.com/tutorial/face-detection-python-opencv
+  A deteção é baseada no site : https://www.datacamp.com/tutorial/face-detection-python-opencv;
   Haar Cascade para deteção de caras usando OpenCV e Python
 
