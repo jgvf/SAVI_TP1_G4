@@ -37,3 +37,16 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
   
   Haar Cascade para deteção de caras usando OpenCV e Python
 
+  principio de funcionamento:
+    1 Ler a imagem;
+    2 Converter para uma imgem de cinzentos;
+    3 Carregar o classificador;
+    4 Defenir os parametros de deteção de caras;
+    5 Desenhar o retângulo envolvente;
+    6 Amostragem do resultado.
+
+  # Resultados
+
+# Seguimento
+
+
