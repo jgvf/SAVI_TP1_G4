@@ -1,15 +1,47 @@
 #!/usr/bin/env python3
 
 import cv2
+import matplotlib.pyplot as plt
+
 
 def main():
     cam = cv2.VideoCapture(0)
 
     while True:
-        check, frame = cam.read()
-        frame=cv2.flip(frame,1)
+        #Read video
+        check,frame = cam.read()
+        frame = cv2.flip(frame,1)
+        y_frame,x_frame,_ = frame.shape
+        #print('x frame',x_frame,'y frame',y_frame)
+        cv2.imshow('video_original', frame)
+        
+        #Convert the image to grayscale
+        gray_image=cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        y_gray,x_gray= gray_image.shape
+        #print('x_gray',x_gray,'y_gray',y_gray)
+        #cv2.imshow('video_gray', gray_image)
 
-        cv2.imshow('video', frame)
+        #Load the Classifier-pre-trained Haar Cascade classifier that is built into OpenCV
+        face_classifier = cv2.CascadeClassifier(
+        cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
+        )
+        
+        #Perform the Face Detection
+        face = face_classifier.detectMultiScale(
+        gray_image, scaleFactor=1.1, minNeighbors=5, minSize=(40, 40)
+        )
+
+        #Drawing a Bounding Box
+        for (x, y, w, h) in face:
+            cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 4)
+
+        cv2.imshow('face detection', frame)
+        # Displaying the Image
+        #img_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+
+        #plt.figure(figsize=(20,10))
+        #plt.imshow('face detection',img_rgb)
+        #plt.axis('off')
 
         key = cv2.waitKey(1)
         if key == 27: # esc
