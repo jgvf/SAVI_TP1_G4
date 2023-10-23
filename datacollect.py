@@ -2,23 +2,25 @@
 
 import cv2
 import matplotlib.pyplot as plt
-
+import os
 
 
 def main():
-    # --------------------------------------
-    # Initialization
-    # --------------------------------------
-    cam = cv2.VideoCapture(0)
-
-    #Load the Classifier-pre-trained Haar Cascade classifier that is built into OpenCV
+    cam=cv2.VideoCapture(0)
     face_classifier = cv2.CascadeClassifier(
     cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
     )
-    
-    # --------------------------------------
-    # Execution
-    # --------------------------------------
+    count=0
+    nameID=str(input("Enter your name:")).lower()
+    path='database/'+nameID
+    isExist=os.path.exists(path)
+    if isExist:
+        print("Name Already Taken")
+        nameID=str(input("Enter your name again:"))
+    else:
+        os.makedirs(path)
+
+
     while True:
     
         check,frame = cam.read()
@@ -41,10 +43,17 @@ def main():
         # --------------------------------------
 
         for (x, y, w, h) in face:
-            cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 4)
-
+            
+            count+=1
+            name='./database/'+nameID+'/'+str(count)+'.jpg'
+            print('Creating Images.......'+name)
+            cv2.imwrite(name,gray_image[y:y+h,x:x+w])
+            cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 0), 4)
+            
         cv2.imshow('face detection', frame)
-        cv2.imread
+        #cv2.imread
+        if count>600:
+            break  
 
         key = cv2.waitKey(1)
         if key == 27: # esc
@@ -53,6 +62,5 @@ def main():
     cam.release()
     cv2.destroyAllWindows()
 
-
 if __name__ =="__main__":
-    main()
+ main()
