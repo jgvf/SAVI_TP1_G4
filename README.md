@@ -35,11 +35,21 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
 # Deteção
   A deteção é baseada no site : https://www.datacamp.com/tutorial/face-detection-python-opencv
   
+
+1. dfew
+2. ewrer
+3. 43545
+
+- ewr ew
+- werwer
+- wer wer
+
+
   Haar Cascade para deteção de caras usando OpenCV e Python
 
   Principio de funcionamento:
     
-    1 Ler a imagem;
+    1. Ler a imagem;
     
     2 Converter para uma imgem de cinzentos;
     
