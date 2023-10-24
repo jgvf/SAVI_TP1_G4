@@ -47,12 +47,12 @@ def main():
             count+=1
             name='./database/'+nameID+'/'+str(count)+'.jpg'
             print('Creating Images.......'+name)
-            cv2.imwrite(name,gray_image[y:y+h,x:x+w])
+            cv2.imwrite(name,frame[y:y+h,x:x+w])
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 0), 4)
             
         cv2.imshow('face detection', frame)
         #cv2.imread
-        if count>600:
+        if count>100:
             break  
 
         key = cv2.waitKey(1)
