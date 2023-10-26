@@ -48,6 +48,7 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
 
   # Resultados da deteção
   O desenvolvimento deste tópico deu origem ao código "detection.py", tendo obtido o seguinte resultado:
+  
   <video src="WhatsApp%20Video%202023-10-26%20at%2011.56.07.mp4" controls title="Title"></video>
   
 
