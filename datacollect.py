@@ -52,7 +52,7 @@ def main():
             
         cv2.imshow('face detection', frame)
         #cv2.imread
-        if count>100:
+        if count>1000:
             break  
 
         key = cv2.waitKey(1)
