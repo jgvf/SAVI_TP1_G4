@@ -49,7 +49,7 @@ def main():
         )
 
         # --------------------------------------
-        # Visualization
+        # Recognition with deaplearning
         # --------------------------------------
 
         for (x, y, w, h) in face:
@@ -60,19 +60,24 @@ def main():
             
             img=img.reshape(1,224,224,3)
             prediction=model.predict(img)
-            print('prediction',prediction)
+            #print('prediction',prediction)
             classIndex=(model.predict(img)>0.5).astype("int32")
-            print('clas number',classIndex)
+            #print('clas number',classIndex)
             idx=np.argmax(classIndex)
-            print('numero de identificação',idx)
+            #print('numero de identificação',idx)
             probabilityValue=np.amax(prediction)
-            
+            print(probabilityValue)
 
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
             cv2.rectangle(frame, (x, y-40), (x + w, y ), (0, 255, 0), -2)
             cv2.putText(frame,str(get_calssName(idx)),(x,y-10),font,0.75,(255,0,0),4)
              
-            #cv2.putText(frame,str(round(probabilityValue*100),2)+'%'+(180,75),font,0.7,(0,0,255),2)
+            cv2.putText(frame,str(round(probabilityValue,1))+'%',(x,y+10),font,0.7,(0,0,255),2)
+
+
+        # --------------------------------------
+        # Visualization
+        # --------------------------------------
 
         cv2.imshow('face recognhition', frame)
         
