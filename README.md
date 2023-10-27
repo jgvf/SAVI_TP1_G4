@@ -47,9 +47,8 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
 6. Amostragem do resultado.
 
   # Resultados da deteção
-  O desenvolvimento deste tópico deu origem ao código "detection.py", tendo obtido o seguinte resultado:
+  O desenvolvimento deste tópico deu origem ao código "detection.py", tendo obtido o seguinte resultado o video que está na pasta docs denominado de
   
-  ![Alt text](<WhatsApp%20Video%202023-10-26%20at%2011.56.07.mp4>) 
   
 
 
@@ -66,7 +65,7 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
   2. Criação e treino do modelo usando o site: https://teachablemachine.withgoogle.com/train
   3. Implementação do modelo no código.
 # Reconhecimento-resultado
-![Alt text](<Screenshot from 2023-10-26 11-06-09.png>)
+![Alt text](</docs/Screenshot from 2023-10-26 11-06-09.png>)
 
 
 
