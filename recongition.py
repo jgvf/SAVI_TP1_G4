@@ -8,7 +8,7 @@ from keras.models import load_model
 import numpy as np
 import cv2
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import os
 
 def get_calssName(classNo):
