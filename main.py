@@ -151,7 +151,7 @@ def main():
 
         # Add frame number and time to top left corner
         cv2.putText(image_gui, 'Frame ' + str(video_frame_number) + ' Time ' + str(frame_stamp) + ' secs',
-                    (10,40), cv2.FONT_HERSHEY_SIMPLEX, 2, (0,255,0), 2, cv2.LINE_AA)
+                    (10,40), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2, cv2.LINE_AA)
 
         cv2.imshow('GUI',image_gui)
             
