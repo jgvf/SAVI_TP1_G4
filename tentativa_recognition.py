@@ -51,12 +51,12 @@ class FaceRecognition:
             ret, frame = video_capture.read()
 
             if self.process_current_frame:
-                samll_frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
+                samll_frame = cv2.resize(frame, (100, 100), fx=0.25, fy=0.25)
                 rgb_small_frame =samll_frame[:, :, ::-1]
 
                 #find all faces in current frame
                 self.face_locations = face_recognition.face_locations(rgb_small_frame)
-                self.face_encodings = face_recognition.face_encodings(rgb_small_frame, self.face_locations)
+                self.face_encodings = face_recognition.face_encodings(samll_frame, self.face_locations)
 
                 self.face_names = []
                 for face_encoding in self.face_encodings:
