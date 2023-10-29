@@ -26,7 +26,7 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
   |5%| Base de dados Caras|
   |5%| Deteção de desconhecidos|
   |5%| Aprendizagem de novas caras|
-  |10%| Comprimentar pessoas|
+  |10%| Cumprimentar pessoas|
   |5%| Interface|
   |10%| Vizualização da informação|
   |10%| Extras|
@@ -42,7 +42,7 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
 1. Ler a imagem;  
 2. Converter para uma imgem de cinzentos;  
 3. Carregar o classificador;  
-4. Definir os parametros de deteção de caras;
+4. Definir os parâmetros de deteção de caras;
 5. Desenhar o retângulo envolvente;
 6. Amostragem do resultado.
 
