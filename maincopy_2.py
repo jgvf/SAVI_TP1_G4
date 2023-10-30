@@ -14,7 +14,7 @@ import numpy as np
 from classes import Detection, Track, computeIOU
 from colorama import Fore, Back, Style
 
-from tentativa_recognition_copy import FaceRecognition, face_confidence
+from tentativa_recognition_copy_2 import FaceRecognition, face_confidence
 import pyttsx3
 import face_recognition
 
