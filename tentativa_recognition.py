@@ -29,7 +29,7 @@ class FaceRecognition:
 
     def __init__(self):
         self.encode_faces()
-
+        self.run_recognition()
         # encode faces
 
     

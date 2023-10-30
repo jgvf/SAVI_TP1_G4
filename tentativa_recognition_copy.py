@@ -93,7 +93,7 @@ class FaceRecognition:
                         engine.say("Hello World!")
                         engine.runAndWait()
                         engine.stop()   
-
+                        print('hello world')
                     self.face_names.append(f'{name} ({confidence})')
 
             self.process_current_frame = not self.process_current_frame
