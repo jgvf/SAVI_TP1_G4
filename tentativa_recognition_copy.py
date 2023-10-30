@@ -60,8 +60,9 @@ class FaceRecognition:
         #engine.setProperty('voice', voices[0].id)  #changing index, changes voices. o for male
         engine.setProperty('voice', voices[0].id)   #changing index, changes voices. 1 for female
 
+        print('c')
         video_capture = cv2.VideoCapture(0)
-
+        print('d')
         if not video_capture.isOpened():
             sys.exit('video source not found...')
         while True:
@@ -90,9 +91,9 @@ class FaceRecognition:
 
                         # Say Hello
 
-                        engine.say("Hello World!")
-                        engine.runAndWait()
-                        engine.stop()   
+                        #engine.say("Hello World!")
+                        #engine.runAndWait()
+                        #engine.stop()   
                         print('hello world')
                     self.face_names.append(f'{name} ({confidence})')
 
@@ -106,18 +107,18 @@ class FaceRecognition:
                 bottom*= 4
                 left*= 4
 
-                cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
-                cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 0, 255), -1)
-                cv2.putText(frame, name, (left+6, bottom - 6), cv2.FONT_HERSHEY_DUPLEX, 0.8, (255,255,255), 1)
+                #v2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
+                #cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 0, 255), -1)
+                #cv2.putText(frame, name, (left+6, bottom - 6), cv2.FONT_HERSHEY_DUPLEX, 0.8, (255,255,255), 1)
 
-            cv2.imshow('Face Recognition', frame)
+            #cv2.imshow('Face Recognition', frame)
 
             key = cv2.waitKey(1)
             if key == 27: # esc
                 break
             
         video_capture.release()
-        cv2.destroyAllWindows()
+        #cv2.destroyAllWindows()
 
 if __name__ == '__main__':
     fr = FaceRecognition()

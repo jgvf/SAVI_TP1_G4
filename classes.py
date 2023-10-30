@@ -1,14 +1,25 @@
 #!/usr/bin/env python3
-# Sistemas Avançados de Visão Industrial (SAVI 22-23)
-# Miguel Riem Oliveira, DEM, UA
 
+import face_recognition
+import os , sys
 import copy
 import csv
 import time
-
+import math
+import pyttsx3
 import cv2
 import numpy as np
 
+def face_confidence(face_distance, face_match_threshold=0.6):
+    range= (1.0 - face_match_threshold)
+    linear_value = (1.0 - face_distance) / (range * 2.0)
+
+    if face_distance > face_match_threshold:
+        return str(round(linear_value * 100, 2)) + '%'
+    else:
+        value = (linear_value + ((1.0 - linear_value) * math.pow((linear_value - 0.5)*2, 0.2))) * 100
+        return str(round(value, 2)) + '%'
+    
 
 def computeIOU(d1, d2):
     # box1 and box2 should be in the format (x1, y1, x2, y2)

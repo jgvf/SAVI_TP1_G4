@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
-# Sistemas Avançados de Visão Industrial (SAVI 22-23)
-# Miguel Riem Oliveira, DEM, UA
+
 
 import copy
 import csv
 import math
 import time
 from random import randint
-import os
+import os,sys
 
 import cv2
 import numpy as np
@@ -24,7 +23,9 @@ def main():
     # --------------------------------------
     # Initialization
     # --------------------------------------
-    cap = cv2.VideoCapture(0)
+    print('a')
+    #cap = cv2.VideoCapture(0)
+    print('b')
     # Create face detector
     detector_filename = cv2.CascadeClassifier(
     cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
