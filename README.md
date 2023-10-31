@@ -47,25 +47,49 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
 6. Amostragem do resultado.
 
   # Resultados da deteção
-  O desenvolvimento deste tópico deu origem ao código "detection.py", tendo obtido o seguinte resultado o video que está na pasta docs denominado de
+  O desenvolvimento deste tópico deu origem ao código "detection.py", tendo obtido o seguinte resultado seguinte video:
+   <video src="docs/dete%C3%A7%C3%A3o.mp4" controls title="Title"></video>
   
   
-
-
-
 # Seguimento
 
+  <video src="docs/traking.mp4" controls title="Title"></video>
+
 # Reconhecimento
-  O reconecimento foi baseado no seguinte video do youtube:
-  https://www.youtube.com/watch?v=lH01BgsIPuE&t=813s
 
-  O reconhecimento está a ser feito suando Python, Keras, OpenCV e Tensorflow.Passando pelos seguintes passos:
+<video src="docs/reconhecimento.mp4" controls title="Title"></video>
 
-  1. Criação de uma base de imagens dos diferentes rostos para posterior análise.
-  2. Criação e treino do modelo usando o site: https://teachablemachine.withgoogle.com/train
-  3. Implementação do modelo no código.
-# Reconhecimento-resultado
-![Alt text](</docs/Screenshot from 2023-10-26 11-06-09.png>)
+# Base de dados Caras
+  
+  A pasta onde está guardada a base de dados é denominda de "faces" ficheiro
+
+![Alt text](<docs/base de dados nomes.jpeg>)
+
+![Alt text](docs/Emanuel.jpeg)
+
+![Alt text](<docs/joao valinho.jpg>)
+
+![Alt text](docs/Figueiredo.jpeg)
 
 
+# Deteção de desconhecidos
+
+![Alt text](<docs/deteção desconhecidos.jpeg>)
+
+# Aprendizagem de novas caras
+
+![Alt text](<docs/deteção de movas caras.jpeg>)
+
+![Alt text](<docs/registo base de dados desconhecido.jpeg>)
+
+# Cumprimentar pessoas
+ é falar sobre o que se usou basicamente... 
+
+# Vizualização da informação
+
+<video src="docs/resultado_final.mp4" controls title="Title"></video>
+
+
+# Extras
+ Atualização da base de dados sempre que encontra alguem desconhecido
 

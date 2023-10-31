@@ -101,7 +101,7 @@ class FaceRecognition:
                 bottom*= 4
                 left*= 4
 
-                cv2.putText(image_gui, name, (left+80, bottom - 180), cv2.FONT_HERSHEY_DUPLEX, 0.8, (255,0,0), 1)
+                cv2.putText(image_gui, name, (left+80, bottom - 180), cv2.FONT_HERSHEY_DUPLEX, 0.8, (0,0,255), 1)
         return(self.list_runed,unknown_list,image_gui)
     
  
