@@ -18,11 +18,11 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
 
  4. O sistema deverá identificar as pessoas que reconhece, e perguntar sobre as pessoas desconhecidas;
 
- 5. O sistema deve cumprimentar as pessoas que já conhece, dizendo "Hello <nome da pessoa>". Poderá utilizar uma ferramenta de \emph{text to speech}, por exemplo https://pypi.org/project/pyttsx3/ ;
+ 5. O sistema deve cumprimentar as pessoas que já conhece, dizendo "Hello <nome da pessoa>". Poderá utilizar uma ferramenta de \emph{text to speech}, por exemplo https:/https://pypi.org/project/pyttsx3//pypi.org/project/pyttsx3/ ;
 
  6. O sistema deverá fazer o seguimento das pessoas na sala e manter a identificação em cima das pessoas que reconheceu anteriormente, ainda que atualmente não seja possível reconhecê-las.
 
- # Tópicos e percentages-para avaliação
+ # Tópicos e percentagens-para avaliação
 
   | Percentagem  | Tarefa |
 | ------------- | ------------- |
@@ -74,9 +74,14 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
 
 # Base de dados Caras
   
+
   A pasta onde está guardada a base de dados é denominda de "faces" e contem as imagens com os elementos do grupo e o nome de identificação.
   Exemplo de configuração inicial da base de dados:
   
+
+  A pasta onde está guardada a base de dados é denominada de "faces", onde se guarda as imagens com o nome da pessoa.
+
+
 ![Alt text](<docs/base de dados nomes.jpeg>)
 
 ![Alt text](docs/Emanuel.jpeg)
@@ -101,9 +106,15 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
 ![Alt text](<docs/registo base de dados desconhecido.jpeg>)
 
 # Cumprimentar pessoas
+
   Usou-se o exemplo de disponibilizado no enunciado do trabalho:
   https:/https://pypi.org/project/pyttsx3//pypi.org/project/pyttsx3/ ;
   Quando a pessoa é reconhecida, cumprimenta-a dizendo "Hello" juntamente com nome associado tal como os desconhecidos (unknow) após serem detetados
+=======
+Usou-se o exemplo de referência disponibilizado no enunciado do trabalho:
+https:/https://pypi.org/project/pyttsx3//pypi.org/project/pyttsx3/ ;
+Quando a pessoa é reconhecida, cumprimenta-a dizendo "Hello" e o seu nome
+>>>>>>> adc18ba66484ba700d1708d4943bd32c1b357dfb
 
 
 # Vizualização da informação
