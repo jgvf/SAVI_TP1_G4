@@ -111,11 +111,11 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
   Usou-se o exemplo de disponibilizado no enunciado do trabalho:
   https:/https://pypi.org/project/pyttsx3//pypi.org/project/pyttsx3/ ;
   Quando a pessoa é reconhecida, cumprimenta-a dizendo "Hello" juntamente com nome associado tal como os desconhecidos (unknow) após serem detetados
-=======
-Usou-se o exemplo de referência disponibilizado no enunciado do trabalho:
-https:/https://pypi.org/project/pyttsx3//pypi.org/project/pyttsx3/ ;
-Quando a pessoa é reconhecida, cumprimenta-a dizendo "Hello" e o seu nome
->>>>>>> adc18ba66484ba700d1708d4943bd32c1b357dfb
+
+  Usou-se o exemplo de referência disponibilizado no enunciado do trabalho:
+  https:/https://pypi.org/project/pyttsx3//pypi.org/project/pyttsx3/ ;
+  Quando a pessoa é reconhecida, cumprimenta-a dizendo "Hello" e o seu nome.
+
 
 
 # Vizualização da informação
