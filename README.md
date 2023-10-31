@@ -3,7 +3,7 @@
 # Saudação 
 
   Bem-vindo ao nosso projeto! 
-  Neste repositório, encontrará o código-fonte e recursos relacionados ao nosso software. 
+  Neste repositório, encontrará o código-fonte e os recursos relacionados ao nosso software. 
   Vamos desbruçar nas principais tarefas deste trabalho.
 
 # Trabalho prático 1- Enunciado
@@ -22,7 +22,7 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
 
  6. O sistema deverá fazer o seguimento das pessoas na sala e manter a identificação em cima das pessoas que reconheceu anteriormente, ainda que atualmente não seja possível reconhecê-las.
 
- # Tópicos e percentagens-para avaliação
+ # Tópicos e percentagens para avaliação
 
   | Percentagem  | Tarefa |
 | ------------- | ------------- |
@@ -57,13 +57,12 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
    <video src="docs/dete%C3%A7%C3%A3o.mp4" controls title="Title"></video>
   
   
-# Seguimento ou traking
-  O traking teve como base a implementação de código desenvolvido em aula, tendo dado origem ao ficheiro main.py e ao vídeo traking.mp4 presente na pasta docs.
+# Seguimento ou tracking
+  O tracking teve como base a implementação de código desenvolvido em aula, tendo dado origem ao ficheiro main.py e ao vídeo traking.mp4 presente na pasta docs.
 
   <video src="docs/traking.mp4" controls title="Title"></video>
 
-# Reconhecimento
-  
+# Reconhecimento  
   O desenvolvimento deste tópico passou pela implementação de duas formas deiferente de fazer reconhecimento.
    A primeira forma passou por implementar deep learning com um ficheiro de treino criado uma única vez, que teve como base o vídeo "https://www.youtube.com/watch?v=lH01BgsIPuE&t=818s" e o site "https://teachablemachine.withgoogle.com/". O desenvolvimento deste tópico deu origem ao código recognition.py, o seu desempenho mostrou-se pouco eficaz e o seu uso foi abandonado por decisão do grupo.
 
@@ -73,8 +72,6 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
 <video src="docs/reconhecimento.mp4" controls title="Title"></video>
 
 # Base de dados Caras
-  
-
   A pasta onde está guardada a base de dados é denominda de "faces" e contem as imagens com os elementos do grupo e o nome de identificação.
   Exemplo de configuração inicial da base de dados:
 
