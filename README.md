@@ -1,6 +1,6 @@
 
 
-# Sudação 
+# Saudação 
 
   Bem-vindo ao nosso projeto! 
   Neste repositório, encontrará o código-fonte e recursos relacionados ao nosso software. 
