@@ -153,7 +153,3 @@ Se tiver alguma dúvida, sinta-se à vontade para entrar em contacto.
 Aproveite o projeto!
 
 
-
-
-=======
->>>>>>> 22a4c1d0fdb35fd2f21c3f87125dc20a817c7682
