@@ -1,5 +1,5 @@
-# SAVI_TP1_G4
 
+<<<<<<< HEAD
 # Sudação 
 
   Bem-vindo ao nosso projeto! 
@@ -154,3 +154,5 @@ Aproveite o projeto!
 
 
 
+=======
+>>>>>>> 22a4c1d0fdb35fd2f21c3f87125dc20a817c7682
