@@ -65,7 +65,7 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
 # Reconhecimento
   
   O desenvolvimento deste tópico passou pela implementação de duas formas deiferente de fazer reconhecimento.
-   A primeira forma passou por implementar deap learning com um ficheiro de treino criado uma única vez, que teve como base o vídeo "https://www.youtube.com/watch?v=lH01BgsIPuE&t=818s" e o site "https://teachablemachine.withgoogle.com/". O desenvolvimento deste tópico deu origem ao código recognition.py, o seu desempenho mostrou-se pouco eficaz e o seu uso foi abandonado por decisão do grupo.
+   A primeira forma passou por implementar deep learning com um ficheiro de treino criado uma única vez, que teve como base o vídeo "https://www.youtube.com/watch?v=lH01BgsIPuE&t=818s" e o site "https://teachablemachine.withgoogle.com/". O desenvolvimento deste tópico deu origem ao código recognition.py, o seu desempenho mostrou-se pouco eficaz e o seu uso foi abandonado por decisão do grupo.
 
    A segunda forma explorada e bem socedida teve como base o vídeo "https://www.youtube.com/watch?v=tl2eEBFEHqM&t=971s" onde analiza os nomes das imagens presentes numa pasta e assucias devidamente para posteriormente fazer o reconhecimento com base nessa informação. O resultado deste tópico deu origem ao código tenstativa_recognition.py e ao vídeo de demontração "reconhecimento.mp4" presente na pasta docs.
    
@@ -77,9 +77,6 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
 
   A pasta onde está guardada a base de dados é denominda de "faces" e contem as imagens com os elementos do grupo e o nome de identificação.
   Exemplo de configuração inicial da base de dados:
-  
-
-  A pasta onde está guardada a base de dados é denominada de "faces", onde se guarda as imagens com o nome da pessoa.
 
 
 ![Alt text](<docs/base de dados nomes.jpeg>)
@@ -100,19 +97,14 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
 ![Alt text](<docs/deteção desconhecidos.jpeg>)
 
 # Aprendizagem de novas caras
-  Sempre que uma nova cara é detetada a a base de dados e o rechonhecimento são atualizados. 
+  Sempre que uma nova cara é detetada a base de dados e o rechonhecimento são atualizados. 
 
 ![Alt text](<docs/deteção de movas caras.jpeg>)
 
 ![Alt text](<docs/registo base de dados desconhecido.jpeg>)
 
 # Cumprimentar pessoas
-
-  Usou-se o exemplo de disponibilizado no enunciado do trabalho:
-  https:/https://pypi.org/project/pyttsx3//pypi.org/project/pyttsx3/ ;
-  Quando a pessoa é reconhecida, cumprimenta-a dizendo "Hello" juntamente com nome associado tal como os desconhecidos (unknow) após serem detetados
-
-  Usou-se o exemplo de referência disponibilizado no enunciado do trabalho:
+  Usou-se o exemplo disponibilizado no enunciado do trabalho:
   https:/https://pypi.org/project/pyttsx3//pypi.org/project/pyttsx3/ ;
   Quando a pessoa é reconhecida, cumprimenta-a dizendo "Hello" e o seu nome.
 
@@ -133,7 +125,7 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
  - Atualização da base de dados sempre que encontra alguem desconhecido.
  
 
-# main
+# Main
 
  O resultado do trabalho desenvolvidp
 
