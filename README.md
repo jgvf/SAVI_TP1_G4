@@ -93,3 +93,8 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
 # Extras
  Atualização da base de dados sempre que encontra alguem desconhecido
 
+# main
+
+ Dizer o programa principal e o ficheiro auxiliar
+ maincopy_3.py
+ classescopy_3.py
