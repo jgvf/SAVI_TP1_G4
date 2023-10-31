@@ -1,5 +1,5 @@
 
-<<<<<<< HEAD
+
 # Sudação 
 
   Bem-vindo ao nosso projeto! 
@@ -100,6 +100,7 @@ Pretende-se desenvolver um sistema inteligente que recebe um stream de vídeo da
 ![Alt text](<docs/deteção desconhecidos.jpeg>)
 
 # Aprendizagem de novas caras
+  Sempre que uma nova cara é detetada a a base de dados e o rechonhecimento são atualizados. 
 
 ![Alt text](<docs/deteção de movas caras.jpeg>)
 
