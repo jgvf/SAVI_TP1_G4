@@ -20,32 +20,21 @@ def main():
     # Initialization
     # --------------------------------------
     cap = cv2.VideoCapture(0)
-
-
     # Create face detector
     detector_filename = cv2.CascadeClassifier(
     cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
     )
-    #detector = cv2.CascadeClassifier(detector_filename)
-    
-    
-    #detector_filename = './haarcascade_frontalface_default.xml' 
-    #detector = cv2.CascadeClassifier(detector_filename)
-
     # Parameters
-    #distance_threshold = 100
     deactivate_threshold = 5.0 # secs
     iou_threshold = 0.3
-
     video_frame_number = 0
     person_count = 0
     tracks = []
+
     # --------------------------------------
     # Execution
     # --------------------------------------
-    while(True): # iterate video frames
-
-        
+    while(True): # iterate video frames   
         result, image_rgb = cap.read() # Capture frame-by-frame
         if result is False:
             break
@@ -53,7 +42,6 @@ def main():
         frame_stamp = round(float(cap.get(cv2.CAP_PROP_POS_MSEC))/1000,2)
         height, width, _ = image_rgb.shape
         image_gui = copy.deepcopy(image_rgb) # good practice to have a gui image for drawing
-
     
         # ------------------------------------------------------
         # Detect persons using haar cascade classifier
@@ -72,7 +60,6 @@ def main():
             detection = Detection(x, x+w, y, y+h, detection_id, frame_stamp)
             detections.append(detection)
             detection_idx += 1
-
         all_detections = copy.deepcopy(detections)
 
         # ------------------------------------------------------
@@ -83,17 +70,6 @@ def main():
             for track in tracks:
                 if not track.active:
                     continue
-                # --------------------------------------
-                # Using distance between centers
-                # --------------------------------------
-                # How to measure how close a detection is to a tracker?
-#                 distance = math.sqrt( (detection.cx-track.detections[-1].cx)**2 + 
-#                                       (detection.cy-track.detections[-1].cy)**2 )
-# 
-#                 if distance < distance_threshold: # This detection belongs to this tracker!!!
-#                     track.update(detection) # add detection to track
-#                     idxs_detections_to_remove.append(idx_detection)
-#                     break # do not test this detection with any other track
 
                 # --------------------------------------
                 # Using IOU
@@ -104,9 +80,7 @@ def main():
                     track.update(detection) # add detection to track
                     idxs_detections_to_remove.append(idx_detection)
                     break # do not test this detection with any other track
-
         idxs_detections_to_remove.reverse()
-
         print('idxs_detections_to_remove ' + str(idxs_detections_to_remove))
         for idx in idxs_detections_to_remove:
             print(detections)
@@ -133,18 +107,14 @@ def main():
         # --------------------------------------
         # Visualization
         # --------------------------------------
-
         # Draw list of all detections (including those associated with the tracks)
         for detection in all_detections:
             detection.draw(image_gui, (255,0,0))
-
         # Draw list of tracks
         for track in tracks:
             if not track.active:
                 continue
             track.draw(image_gui)
-
-
         if video_frame_number == 0:
             cv2.namedWindow('GUI',cv2.WINDOW_NORMAL)
             #cv2.resizeWindow('GUI', int(width/2), int(height/2))
@@ -152,15 +122,11 @@ def main():
         # Add frame number and time to top left corner
         cv2.putText(image_gui, 'Frame ' + str(video_frame_number) + ' Time ' + str(frame_stamp) + ' secs',
                     (10,40), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,255,0), 2, cv2.LINE_AA)
-
         cv2.imshow('GUI',image_gui)
-            
         key = cv2.waitKey(1)
         if key == 27: # esc
             break
-
         video_frame_number += 1
-
     
 if __name__ == "__main__":
     main()
